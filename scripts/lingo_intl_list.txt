@@ -1,0 +1,15 @@
+zh_CN
+en_US
+ko_KR
+es_ES
+fil_PH
+fr_FR
+ja_JP
+pt_PT
+th_TH
+tr_TR
+vi_VN
+de_DE
+it_IT
+ru_RU
+zh_HK

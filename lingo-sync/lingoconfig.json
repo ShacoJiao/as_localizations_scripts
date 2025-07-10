@@ -1,0 +1,94 @@
+{
+  "hostname": "b.lingo-translation.com",
+  "port": 80,
+  "fileConfig": {
+    "startTag": "// lingo-start",
+    "endTag": "// lingo-end",
+    "template": "  \"{{key}}\": \"{{value}}\","
+  },
+  "resources": [
+    {
+      "pathname": "",
+      "token": "",
+      "dataPath": "data.records"
+    }
+  ],
+  "languageFiles": [
+    {
+      "code": "zh_CN",
+      "path": "src/locales/zh_CN.js"
+    },
+    {
+      "code": "en_US",
+      "path": "src/locales/en_US.js"
+    },
+    {
+      "code": "ko_KR",
+      "path": "src/locales/ko_KR.js"
+    },
+    {
+      "code": "es_ES",
+      "path": "src/locales/es_ES.js"
+    },
+    {
+      "code": "fil_PH",
+      "path": "src/locales/fil_PH.js"
+    },
+    {
+      "code": "fr_FR",
+      "path": "src/locales/fr_FR.js"
+    },
+    {
+      "code": "ja_JP",
+      "path": "src/locales/ja_JP.js"
+    },
+    {
+      "code": "pt_PT",
+      "path": "src/locales/pt_PT.js"
+    },
+    {
+      "code": "th_TH",
+      "path": "src/locales/th_TH.js"
+    },
+    {
+      "code": "tr_TR",
+      "path": "src/locales/tr_TR.js"
+    },
+    {
+      "code": "vi_VN",
+      "path": "src/locales/vi_VN.js"
+    },
+    {
+      "code": "zh_HK",
+      "path": "src/locales/zh_HK.js"
+    },
+    {
+      "code": "de_DE",
+      "path": "src/locales/de_DE.js"
+    },
+    {
+      "code": "it_IT",
+      "path": "src/locales/it_IT.js"
+    },
+    {
+      "code": "ru_RU",
+      "path": "src/locales/ru_RU.js"
+    }
+  ],
+  "valueReplaces": [
+    {
+      "from": "\"",
+      "to": "\\\""
+    },
+    {
+      "from": "\n",
+      "to": "\\\n"
+    }
+  ],
+  "keyReplaces": [
+    {
+      "from": "hotcoinWeb_v1_2_3_",
+      "to": ""
+    }
+  ]
+}
