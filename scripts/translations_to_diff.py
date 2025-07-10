@@ -171,7 +171,7 @@ def main():
             run_command(f"{venv_python} ./scripts/openai_translate.py", cwd=localizations_sdk_dir)
                 
             print_step("Step 8", "Export lingo json file")
-            run_command(f"{venv_python} packages/localizations_sdk/scripts/diff_to_lingo.py", cwd=project_root)
+            run_command(f"{venv_python} ./scripts/diff_to_lingo.py", cwd=project_root)
         else:
             print_info("没有需要翻译的内容，跳过步骤 7 和 8")
 
