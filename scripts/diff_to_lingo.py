@@ -50,8 +50,8 @@ def read_supported_languages():
 def read_diff_json():
     """读取 diff.json 和 diff_en_US.json 文件"""
     try:
-        # 读取中文翻译
-        diff_path = os.path.join('build', 'localizations', 'diff.json')
+        # 使用项目根目录的绝对路径
+        diff_path = os.path.join(project_root, 'build', 'localizations', 'diff.json')
         if not os.path.exists(diff_path):
             print_error(f"找不到 diff.json 文件: {diff_path}")
             print_info("请先运行 make export_translations_diff 生成 diff.json 文件")
@@ -66,7 +66,7 @@ def read_diff_json():
             zh_data = json.loads(content)
 
         # 读取英文翻译
-        en_diff_path = os.path.join('build', 'localizations', 'diff_en_US.json')
+        en_diff_path = os.path.join(project_root, 'build', 'localizations', 'diff_en_US.json')
         if not os.path.exists(en_diff_path):
             print_error(f"找不到 diff_en_US.json 文件: {en_diff_path}")
             print_info("请先翻译英文并生成 diff_en_US.json 文件")
@@ -117,8 +117,8 @@ def convert_to_lingo_format(zh_data, en_data, supported_languages):
 def save_translations(translations):
     """保存转换后的数据"""
     try:
-        # 确保输出目录存在
-        output_dir = os.path.join('build', 'localizations')
+        # 使用项目根目录的绝对路径
+        output_dir = os.path.join(project_root, 'build', 'localizations')
         os.makedirs(output_dir, exist_ok=True)
         
         # 保存文件
