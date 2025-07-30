@@ -1,6 +1,6 @@
 {
   "hostname": "b.lingo-translation.com",
-  "port": 80,
+  "port": 443,
   "fileConfig": {
     "startTag": "// lingo-start",
     "endTag": "// lingo-end",
@@ -65,6 +65,10 @@
     {
       "code": "de_DE",
       "path": "src/locales/de_DE.js"
+    },
+    {
+      "code": "id_ID",
+      "path": "src/locales/id_ID.js"
     },
     {
       "code": "it_IT",

@@ -13,3 +13,4 @@ de_DE
 it_IT
 ru_RU
 zh_HK
+id_ID
